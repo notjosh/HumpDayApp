@@ -50,7 +50,6 @@
 		42EA008117C4A1EE00A6EE2A /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LaunchAtLoginController.h; path = External/LaunchAtLoginController/LaunchAtLoginController.h; sourceTree = SOURCE_ROOT; };
 		42EA008217C4A1EE00A6EE2A /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LaunchAtLoginController.m; path = External/LaunchAtLoginController/LaunchAtLoginController.m; sourceTree = SOURCE_ROOT; };
 		42EA008417C4A7C200A6EE2A /* HumpDay.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = HumpDay.icns; sourceTree = "<group>"; };
-		42EA008617C4A86500A6EE2A /* HumpDay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HumpDay.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +103,6 @@
 		42EA004E17C484DD00A6EE2A /* HumpDay */ = {
 			isa = PBXGroup;
 			children = (
-				42EA008617C4A86500A6EE2A /* HumpDay.entitlements */,
 				42EA007F17C4A1DD00A6EE2A /* External */,
 				42EA005A17C484DD00A6EE2A /* NTJAppDelegate.h */,
 				42EA005B17C484DD00A6EE2A /* NTJAppDelegate.m */,
