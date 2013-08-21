@@ -13,7 +13,7 @@
 @interface NTJAppDelegate ()
 
 @property (nonatomic, strong) IBOutlet NSMenu *menu;
-@property (nonatomic, weak) IBOutlet LaunchAtLoginController *launchAtLoginController;
+@property (nonatomic, strong) IBOutlet LaunchAtLoginController *launchAtLoginController;
 
 @property (nonatomic, strong) NSStatusItem *hump;
 @property (nonatomic, strong) NSTimer *timer;
