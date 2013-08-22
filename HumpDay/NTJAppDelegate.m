@@ -8,12 +8,11 @@
 
 #import "NTJAppDelegate.h"
 
-#import "LaunchAtLoginController.h"
+#import "StartAtLoginController.h"
 
 @interface NTJAppDelegate ()
 
 @property (nonatomic, strong) IBOutlet NSMenu *menu;
-@property (nonatomic, strong) IBOutlet LaunchAtLoginController *launchAtLoginController;
 
 @property (nonatomic, strong) NSStatusItem *hump;
 @property (nonatomic, strong) NSTimer *timer;
@@ -29,10 +28,6 @@
     self.hump = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     self.hump.menu = self.menu;
     self.hump.highlightMode = YES;
-
-    if ([self isFirstRun]) {
-        self.launchAtLoginController.launchAtLogin = YES;
-    }
 
     self.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
 

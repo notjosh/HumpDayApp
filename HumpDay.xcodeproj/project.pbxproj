@@ -21,9 +21,35 @@
 		42EA007C17C49DA300A6EE2A /* NoHump-On@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EA007417C49DA300A6EE2A /* NoHump-On@2x.png */; };
 		42EA007D17C49DA300A6EE2A /* NoHump.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EA007517C49DA300A6EE2A /* NoHump.png */; };
 		42EA007E17C49DA300A6EE2A /* NoHump@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EA007617C49DA300A6EE2A /* NoHump@2x.png */; };
-		42EA008317C4A1EE00A6EE2A /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA008217C4A1EE00A6EE2A /* LaunchAtLoginController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		42EA008517C4A7C200A6EE2A /* HumpDay.icns in Resources */ = {isa = PBXBuildFile; fileRef = 42EA008417C4A7C200A6EE2A /* HumpDay.icns */; };
+		42EA008A17C58C0900A6EE2A /* StartAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA008917C58C0900A6EE2A /* StartAtLoginController.m */; };
+		42EA008C17C58D3600A6EE2A /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EA008B17C58D3600A6EE2A /* ServiceManagement.framework */; };
+		42EA00BD17C58E2800A6EE2A /* HumpDayHelper.app in Copy Helper App */ = {isa = PBXBuildFile; fileRef = 42EA00BB17C58DEC00A6EE2A /* HumpDayHelper.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42EA00BA17C58DEC00A6EE2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42EA00B617C58DEB00A6EE2A /* HumpDayHelper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42EA009617C58DEB00A6EE2A;
+			remoteInfo = HumpDayHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42EA00BC17C58E0700A6EE2A /* Copy Helper App */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				42EA00BD17C58E2800A6EE2A /* HumpDayHelper.app in Copy Helper App */,
+			);
+			name = "Copy Helper App";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		42EA004517C484DD00A6EE2A /* HumpDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumpDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,9 +73,12 @@
 		42EA007417C49DA300A6EE2A /* NoHump-On@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NoHump-On@2x.png"; path = "Resources/Images/StatusBar/NoHump-On@2x.png"; sourceTree = "<group>"; };
 		42EA007517C49DA300A6EE2A /* NoHump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NoHump.png; path = Resources/Images/StatusBar/NoHump.png; sourceTree = "<group>"; };
 		42EA007617C49DA300A6EE2A /* NoHump@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NoHump@2x.png"; path = "Resources/Images/StatusBar/NoHump@2x.png"; sourceTree = "<group>"; };
-		42EA008117C4A1EE00A6EE2A /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LaunchAtLoginController.h; path = External/LaunchAtLoginController/LaunchAtLoginController.h; sourceTree = SOURCE_ROOT; };
-		42EA008217C4A1EE00A6EE2A /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LaunchAtLoginController.m; path = External/LaunchAtLoginController/LaunchAtLoginController.m; sourceTree = SOURCE_ROOT; };
 		42EA008417C4A7C200A6EE2A /* HumpDay.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = HumpDay.icns; sourceTree = "<group>"; };
+		42EA008817C58C0900A6EE2A /* StartAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartAtLoginController.h; path = External/StartAtLoginController/StartAtLoginController.h; sourceTree = SOURCE_ROOT; };
+		42EA008917C58C0900A6EE2A /* StartAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartAtLoginController.m; path = External/StartAtLoginController/StartAtLoginController.m; sourceTree = SOURCE_ROOT; };
+		42EA008B17C58D3600A6EE2A /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		42EA00B617C58DEB00A6EE2A /* HumpDayHelper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HumpDayHelper.xcodeproj; path = Helper/HumpDayHelper/HumpDayHelper.xcodeproj; sourceTree = "<group>"; };
+		42EA00BE17C58E4000A6EE2A /* HumpDay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HumpDay.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42EA004917C484DD00A6EE2A /* Cocoa.framework in Frameworks */,
+				42EA008C17C58D3600A6EE2A /* ServiceManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +126,7 @@
 				42EA004B17C484DD00A6EE2A /* AppKit.framework */,
 				42EA004C17C484DD00A6EE2A /* CoreData.framework */,
 				42EA004D17C484DD00A6EE2A /* Foundation.framework */,
+				42EA008B17C58D3600A6EE2A /* ServiceManagement.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
@@ -103,6 +134,7 @@
 		42EA004E17C484DD00A6EE2A /* HumpDay */ = {
 			isa = PBXGroup;
 			children = (
+				42EA00B617C58DEB00A6EE2A /* HumpDayHelper.xcodeproj */,
 				42EA007F17C4A1DD00A6EE2A /* External */,
 				42EA005A17C484DD00A6EE2A /* NTJAppDelegate.h */,
 				42EA005B17C484DD00A6EE2A /* NTJAppDelegate.m */,
@@ -116,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				42EA006517C49B8C00A6EE2A /* Images */,
+				42EA00BE17C58E4000A6EE2A /* HumpDay.entitlements */,
 				42EA008417C4A7C200A6EE2A /* HumpDay.icns */,
 				42EA005017C484DD00A6EE2A /* HumpDay-Info.plist */,
 				42EA005117C484DD00A6EE2A /* InfoPlist.strings */,
@@ -152,18 +185,26 @@
 		42EA007F17C4A1DD00A6EE2A /* External */ = {
 			isa = PBXGroup;
 			children = (
-				42EA008017C4A1E300A6EE2A /* LaunchAtLoginController */,
+				42EA008717C58BFE00A6EE2A /* StartAtLoginController */,
 			);
 			name = External;
 			sourceTree = "<group>";
 		};
-		42EA008017C4A1E300A6EE2A /* LaunchAtLoginController */ = {
+		42EA008717C58BFE00A6EE2A /* StartAtLoginController */ = {
 			isa = PBXGroup;
 			children = (
-				42EA008117C4A1EE00A6EE2A /* LaunchAtLoginController.h */,
-				42EA008217C4A1EE00A6EE2A /* LaunchAtLoginController.m */,
+				42EA008817C58C0900A6EE2A /* StartAtLoginController.h */,
+				42EA008917C58C0900A6EE2A /* StartAtLoginController.m */,
 			);
-			name = LaunchAtLoginController;
+			name = StartAtLoginController;
+			sourceTree = "<group>";
+		};
+		42EA00B717C58DEB00A6EE2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42EA00BB17C58DEC00A6EE2A /* HumpDayHelper.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +217,7 @@
 				42EA004117C484DD00A6EE2A /* Sources */,
 				42EA004217C484DD00A6EE2A /* Frameworks */,
 				42EA004317C484DD00A6EE2A /* Resources */,
+				42EA00BC17C58E0700A6EE2A /* Copy Helper App */,
 			);
 			buildRules = (
 			);
@@ -206,12 +248,28 @@
 			mainGroup = 42EA003C17C484DD00A6EE2A;
 			productRefGroup = 42EA004617C484DD00A6EE2A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 42EA00B717C58DEB00A6EE2A /* Products */;
+					ProjectRef = 42EA00B617C58DEB00A6EE2A /* HumpDayHelper.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				42EA004417C484DD00A6EE2A /* HumpDay */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		42EA00BB17C58DEC00A6EE2A /* HumpDayHelper.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HumpDayHelper.app;
+			remoteRef = 42EA00BA17C58DEC00A6EE2A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		42EA004317C484DD00A6EE2A /* Resources */ = {
@@ -242,7 +300,7 @@
 			files = (
 				42EA005517C484DD00A6EE2A /* main.m in Sources */,
 				42EA005C17C484DD00A6EE2A /* NTJAppDelegate.m in Sources */,
-				42EA008317C4A1EE00A6EE2A /* LaunchAtLoginController.m in Sources */,
+				42EA008A17C58C0900A6EE2A /* StartAtLoginController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +380,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -338,6 +396,7 @@
 		42EA006317C484DD00A6EE2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HumpDay/HumpDay.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -352,6 +411,7 @@
 		42EA006417C484DD00A6EE2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HumpDay/HumpDay.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -382,6 +442,7 @@
 				42EA006417C484DD00A6EE2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
