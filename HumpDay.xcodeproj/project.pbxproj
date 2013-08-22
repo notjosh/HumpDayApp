@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42BDCEE817C59B5600DCF924 /* HumpDay.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 42BDCEE717C59B5600DCF924 /* HumpDay.iconset */; };
 		42EA004917C484DD00A6EE2A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EA004817C484DD00A6EE2A /* Cocoa.framework */; };
 		42EA005317C484DD00A6EE2A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42EA005117C484DD00A6EE2A /* InfoPlist.strings */; };
 		42EA005517C484DD00A6EE2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA005417C484DD00A6EE2A /* main.m */; };
@@ -52,6 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		42BDCEE717C59B5600DCF924 /* HumpDay.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = HumpDay.iconset; sourceTree = "<group>"; };
 		42EA004517C484DD00A6EE2A /* HumpDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumpDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EA004817C484DD00A6EE2A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		42EA004B17C484DD00A6EE2A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -150,6 +152,7 @@
 				42EA006517C49B8C00A6EE2A /* Images */,
 				42EA00BE17C58E4000A6EE2A /* HumpDay.entitlements */,
 				42EA008417C4A7C200A6EE2A /* HumpDay.icns */,
+				42BDCEE717C59B5600DCF924 /* HumpDay.iconset */,
 				42EA005017C484DD00A6EE2A /* HumpDay-Info.plist */,
 				42EA005117C484DD00A6EE2A /* InfoPlist.strings */,
 				42EA005417C484DD00A6EE2A /* main.m */,
@@ -218,6 +221,7 @@
 				42EA004217C484DD00A6EE2A /* Frameworks */,
 				42EA004317C484DD00A6EE2A /* Resources */,
 				42EA00BC17C58E0700A6EE2A /* Copy Helper App */,
+				42BDCEE917C59BF400DCF924 /* Run Scrip: rm $HELPER/embedded.provisionprofile */,
 			);
 			buildRules = (
 			);
@@ -288,10 +292,28 @@
 				42EA007D17C49DA300A6EE2A /* NoHump.png in Resources */,
 				42EA007E17C49DA300A6EE2A /* NoHump@2x.png in Resources */,
 				42EA008517C4A7C200A6EE2A /* HumpDay.icns in Resources */,
+				42BDCEE817C59B5600DCF924 /* HumpDay.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42BDCEE917C59BF400DCF924 /* Run Scrip: rm $HELPER/embedded.provisionprofile */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Scrip: rm $HELPER/embedded.provisionprofile";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Contents/Library/LoginItems/HumpDayHelper.app/Contents/embedded.provisionprofile\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42EA004117C484DD00A6EE2A /* Sources */ = {
