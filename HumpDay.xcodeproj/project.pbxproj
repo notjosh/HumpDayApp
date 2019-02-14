@@ -234,6 +234,11 @@
 				TargetAttributes = {
 					42EA004417C484DD00A6EE2A = {
 						DevelopmentTeam = FR4Z9GU3K2;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -428,6 +433,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = FR4Z9GU3K2;
+				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HumpDay/HumpDay-Prefix.pch";
 				INFOPLIST_FILE = "HumpDay/HumpDay-Info.plist";
@@ -445,6 +451,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = FR4Z9GU3K2;
+				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HumpDay/HumpDay-Prefix.pch";
 				INFOPLIST_FILE = "HumpDay/HumpDay-Info.plist";

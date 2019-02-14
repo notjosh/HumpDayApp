@@ -56,7 +56,7 @@
     NSInteger weekday = [dateComponents weekday];
 #endif
 
-    const NSInteger WEEKDAY_WEDNESDAY = 4;
+    static const NSInteger WEEKDAY_WEDNESDAY = 4;
 
     NSImage *image = [NSImage imageNamed:@"NoHump"];
 
