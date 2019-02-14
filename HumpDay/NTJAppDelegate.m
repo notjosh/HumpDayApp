@@ -27,6 +27,8 @@
 {
     self.hump = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     self.hump.menu = self.menu;
+
+//    [self.hump.button.cell highli]
     self.hump.highlightMode = YES;
 
     self.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
@@ -42,41 +44,34 @@
 
 #pragma mark - Helper
 
-- (BOOL)isFirstRun
-{
-    NSDictionary *defaults = @{
-                               @"isFirstRun" : @YES
-                               };
-    [[NSUserDefaults standardUserDefaults] registerDefaults:defaults];
-
-    BOOL isFirstRun = [[NSUserDefaults standardUserDefaults] boolForKey:@"isFirstRun"];
-
-    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"isFirstRun"];
-
-    return isFirstRun;
-}
-
 - (void)handleTick:(NSTimer *)timer
 {
 #if 0
     NSDateComponents *dateComponents = [self.calendar components:NSSecondCalendarUnit
                                                         fromDate:[NSDate date]];
-    NSInteger weekday = [dateComponents second];
+    NSInteger weekday = [dateComponents second] % 10;
 #else
-    NSDateComponents *dateComponents = [self.calendar components:NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit
+    NSDateComponents *dateComponents = [self.calendar components:NSWeekdayCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit
                                                         fromDate:[NSDate date]];
     NSInteger weekday = [dateComponents weekday];
 #endif
-    
+
     const NSInteger WEEKDAY_WEDNESDAY = 4;
-    
+
+    NSImage *image = [NSImage imageNamed:@"NoHump"];
+
+    // hump day
     if (WEEKDAY_WEDNESDAY == weekday) {
-        [self.hump setImage:[NSImage imageNamed:@"Hump"]];
-        [self.hump setAlternateImage:[NSImage imageNamed:@"Hump-On"]];
-    } else {
-        [self.hump setImage:[NSImage imageNamed:@"NoHump"]];
-        [self.hump setAlternateImage:[NSImage imageNamed:@"NoHump-On"]];
+        image = [NSImage imageNamed:@"Hump"];
     }
+    // valentine
+    else if (dateComponents.month == 2 && dateComponents.day == 14) {
+        image = [NSImage imageNamed:@"HumpMe"];
+    }
+
+    image.template = YES;
+
+    self.hump.button.image = image;
 }
 
 @end
