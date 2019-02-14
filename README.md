@@ -8,4 +8,4 @@ If it's hump day, you'll be sporting a winner of a status bar icon such as:
 
 (Dang son, look at that hump!)
 
-Binary download available at: http://cl.ly/243h0m122I3w
+Binary download available at: http://hi.notjo.sh/d562fb (codesigned, notarised)
